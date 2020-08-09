@@ -1,0 +1,8 @@
+{
+	"name": "zeit-integration-recent-deployments",
+	"dependencies": {
+		"@vercel/integration-utils": "latest",
+		"@vercel/node": "latest",
+		"qrcode": "^1.4.4"
+	}
+}
