@@ -1,8 +1,16 @@
-# ZEIT Integration: Recent Deployments
+# Vercel Integration: QR Code Viewer
 
-This UiHook fetches some data from the ZEIT API and renders it to the user.
+This UiHook displays QR Codes for recent deployment urls.
 
-## Run Locally
+## Usage
+
+Add it to your integrations through [the marketplace link](https://vercel.com/integrations/qr-code-viewer).
+
+![img](./look.png)
+
+## Development
+
+### Install
 
 Install NPM dependencies with:
 
@@ -16,14 +24,14 @@ Then run this UiHook locally with:
 vercel dev -p 5005
 ```
 
-Then [create a ZEIT integration](https://zeit.co/docs/integrations) and set the UiHook URI to: `http:///localhost:5005`
+Then [create a Vercel integration](https://vercel.app/docs/integrations) and set the UiHook URI to: `http:///localhost:5005`
 
-## Deploy to Production
+### Deploy to Production
 
 Deploy this UiHook to production with:
 
 ```
-now --target=production
+vercel --prod
 ```
 
 Then use the alias of your deployment as the new UiHook URI of your addon.
