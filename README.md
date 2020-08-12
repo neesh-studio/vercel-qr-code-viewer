@@ -33,5 +33,4 @@ Deploy this UiHook to production with:
 ```
 vercel --prod
 ```
-
 Then use the alias of your deployment as the new UiHook URI of your addon.
