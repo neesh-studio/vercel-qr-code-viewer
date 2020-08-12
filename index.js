@@ -79,8 +79,6 @@ module.exports = withUiHook(async ({payload, zeitClient}) => {
 
 	return htm`
 		<Page>
-		    <ProjectSwitcher message="Choose a project from the list" />
-			<H1>Recent deployments on this ${projectId? 'project' : 'account'}</H1>
 			<UL>
 				${deployments.map((u) => htm`<${UrlItem} href=${'https://'+u.url} data=${svgUrls[deployments.indexOf(u)]}, meta=${u.meta} project=${u.project} //>`)}
 			</UL>
